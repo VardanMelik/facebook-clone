@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
 
 function App() {
  
@@ -7,10 +8,12 @@ function App() {
     // DEM naming convention
     <div className="App">
       <Header />
-      {/* App body */}
-      {/* Sidebar */}
-      {/* Feed */}
-      {/* Widget */}
+      <div className="app__body">
+        <Sidebar/>
+        {/* Feed */}
+        {/* Widget */}
+      </div>
+     
     </div>
   );
 }

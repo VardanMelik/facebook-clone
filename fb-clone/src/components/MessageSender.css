@@ -38,7 +38,9 @@
     display: none;
 }
 
-.messageSender__input {}
+.messageSender__input {
+    flex: 1;
+}
 
 .messageSender__option {
     padding: 20px;
@@ -48,8 +50,18 @@
     margin: 5px;
 }
 
-;
-messageSender__option>h3 {
+.messageSender__option>h3 {
     font-size: medium;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.messageSender__option:hover {
+    background-color: #eff2f5;
+    border-radius: 20px;
+}
+
+.messageSender__bottom {
+    display: flex;
+    justify-content: space-evenly;
 }

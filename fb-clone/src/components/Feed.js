@@ -16,7 +16,6 @@ function Feed() {
             })));
         })
     }, []);
-    console.log('Post: ' + posts.data);
 
     return (
         <div className="feed">

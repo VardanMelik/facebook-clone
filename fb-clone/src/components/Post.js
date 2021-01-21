@@ -17,7 +17,11 @@ function Post({ profilePic, image, username, timestamp, message }) {
                 <div className="post__topInfo">
                     <h3>{username}</h3>
                     <p>
-                        { new Date(timestamp).toUTCString() }
+                        {/* new Date(timestamp).toUTCString() */}
+                        { /*new Date(timestamp).toUTCString() */}
+                        { /*new Date(timestamp).toLocaleDateString()*/ }
+                        { new Date(timestamp).toLocaleString() }
+                        { /*new Date(timestamp).toDateString()*/ }
                     </p>
                 </div>
             </div>

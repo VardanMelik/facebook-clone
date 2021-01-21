@@ -20,7 +20,8 @@ function MessageSender() {
         // Adding message to DB
         db.collection('posts').add({
             message: input,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(), 
+            /*timestamp: firebase.firestore.FieldValue.serverTimestamp(),*/
+            timestamp: Date(),
             profilePic: user.photoURL,
             username: user.displayName,
             image: imageUrl

@@ -12,8 +12,12 @@ import AddIcon from '@material-ui/icons/Add';
 import ForumOutlinedIcon from '@material-ui/icons/ForumOutlined';
 import NotificationsActiveOutlinedIcon from '@material-ui/icons/NotificationsActiveOutlined';
 import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined';
+import { useStateValue } from '../StateProvider';
+import { Avatar } from '@material-ui/core';
 
 function Header() {
+    const [{ user }, dispatch] = useStateValue();
+
     return (
         <div className="header">
             <div className="header__left">
@@ -54,8 +58,8 @@ function Header() {
 
             <div className="header__right">
                 <div className="header__info">
-                    <AccountCircleOutlinedIcon />
-                    <h4>Gagik</h4>
+                    <Avatar src={user.photoURL} />
+                    <h4>{user.displayName}</h4>
                 </div>
 
                 <IconButton>
